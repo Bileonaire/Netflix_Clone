@@ -160,7 +160,7 @@ img {
   border-bottom: var(--primary-color) 4px solid;
 }
 
-#tab-content-1 .tab-1-content-inner {
+#tab-1-content .tab-1-content-inner {
   display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-gap: 2rem;
@@ -183,6 +183,16 @@ img {
   grid-gap: 2rem;
   align-items: center;
   justify-content: center;
+}
+
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+  display: none;
+}
+
+.show {
+  display: block !important;
 }
 
 .table {
@@ -386,5 +396,5 @@ img {
 @media(max-height: 600px) {
   .showcase-content {
 	margin-top: 3rem;
-}
+  }
 }
